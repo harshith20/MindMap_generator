@@ -1,0 +1,23 @@
+# Model artefacts (large binaries — store on HF Hub instead)
+models/
+
+# Dataset (download from Kaggle)
+data/*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+
+# Jupyter notebooks (original monolithic files — archived after refactor)
+*.ipynb
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS artefacts
+.DS_Store
+Thumbs.db
