@@ -20,6 +20,7 @@ markmap-synthesizer/
 ├── README.md                   ← You are here
 ├── requirements.txt            ← Python dependencies
 ├── data/
+│   ├── distill_dataset.py      ← Gemini-powered reverse data-distillation pipeline
 │   └── format_dataset.py       ← Dataset formatting & 90/10 train/val split
 ├── training/
 │   └── train_qlora.py          ← QLoRA training loop (VRAM callback + EarlyStopping)
@@ -77,6 +78,22 @@ markmap-synthesizer/
 ---
 
 ## 🚀 Quick Start
+
+### 0. Generate the dataset  *(skip if you already have `markmap_dataset_1500.json`)*
+
+Set your Gemini API keys — **never hardcode them in source files**:
+```bash
+# Local machine: add to a .env file (gitignored) or export directly
+export GEMINI_API_KEY_1="your-primary-key"
+export GEMINI_API_KEY_2="your-secondary-key"   # optional — used on quota exhaust
+export GEMINI_API_KEY_3="your-tertiary-key"    # optional — used on quota exhaust
+
+# Place your Phase-1 topic list here first:
+#   data/phase1_deduplicated_topics.json
+
+python data/distill_dataset.py
+# Output: ./data/markmap_dataset_1500.json (auto-resumed on crash)
+```
 
 ### 1. Install dependencies
 ```bash

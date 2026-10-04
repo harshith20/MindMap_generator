@@ -1,23 +1,52 @@
-# Model artefacts (large binaries — store on HF Hub instead)
+# =============================================================
+# SECRETS — never commit API keys or tokens
+# =============================================================
+.env
+.env.*
+secrets.json
+*_key.txt
+*_token.txt
+
+# =============================================================
+# Model artefacts  (large binaries — live on HF Hub)
+# =============================================================
 models/
 
-# Dataset (download from Kaggle)
+# =============================================================
+# Dataset files  (download from Kaggle / regenerate locally)
+# =============================================================
 data/*.json
+data/*.json.tmp      # Atomic-save temp files written by distill_dataset.py
 
-# Python cache
+# =============================================================
+# Python cache & build artefacts
+# =============================================================
 __pycache__/
 *.py[cod]
 *.pyo
-.env
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
 
-# Jupyter notebooks (original monolithic files — archived after refactor)
+# =============================================================
+# Jupyter notebooks  (original monolithic Kaggle files)
+# =============================================================
 *.ipynb
 
+# =============================================================
 # Virtual environments
+# =============================================================
 venv/
 .venv/
 env/
+.conda/
 
-# OS artefacts
+# =============================================================
+# OS & editor artefacts
+# =============================================================
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
