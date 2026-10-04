@@ -2,6 +2,16 @@
 
 > **QLoRA fine-tuned Qwen2.5-3B-Instruct** that converts raw, unstructured technical study notes into hierarchical [Markmap](https://markmap.js.org/) mind-maps in a single inference call.
 
+Actual Notes --
+The evolution of money transitioned through distinct phases to solve scaling issues in human trade. It began with the barter system, which suffered from the 'double coincidence of wants'—both parties had to want exactly what the other had simultaneously. To solve this, societies adopted commodity money like salt, cowrie shells, and eventually precious metals. While commodities had intrinsic value, their physical weight, divisibility issues, and supply fluctuations (e.g. a sudden silver mine discovery causing inflation) created severe system constraints.
+
+This led to the architecture of representative money, where paper receipts were backed by gold reserves stored in bank vaults. However, the Gold Standard restricted central banks from adjusting the money supply during economic crises like the Great Depression. Consequently, governments shifted to Fiat money, which is completely unbacked by physical commodities and derives its value entirely from government decree and social trust. 
+
+The core paradox of fiat money is that while it enables dynamic monetary policy and massive scalability through digital banking ledgers, over-reliance on printing money can trigger hyperinflation. Today, edge cases like decentralized cryptocurrencies (Bitcoin) and Central Bank Digital Currencies (CBDCs) attempt to solve fiat's centralization flaws using blockchain consensus algorithms, though they struggle with network latency, high energy costs, and transaction throughput limitations.
+
+<img width="749" height="379" alt="image" src="https://github.com/user-attachments/assets/74f7925f-c3a9-4fb6-b3e2-4dc4b0aeec9d" />
+
+
 ---
 
 ## 🔗 Hugging Face Links
